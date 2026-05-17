@@ -1,0 +1,6 @@
+{
+  "name": "Chlebak - Pieczywo Rzemieślnicze",
+  "description": "Rzemieślnicza piekarnia w Rudzie Śląskiej oferująca świeże, tradycyjne pieczywo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

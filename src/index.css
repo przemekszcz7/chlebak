@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Nunito", sans-serif;
+  --font-mono: "DM Mono", monospace;
+  --font-hand: "Dancing Script", cursive;
+
+  --color-bakery-bg: #FFF8F8;
+  --color-bakery-bg-section: #FFF0F3;
+  --color-bakery-bg-stripe: #F9C4D0;
+  --color-bakery-pink: #E8728A;
+  --color-bakery-pink-deep: #C44F68;
+  --color-bakery-pink-light: #F5A8BA;
+  --color-bakery-pink-pale: #FDE8ED;
+  --color-bakery-cream: #FFF5E6;
+  --color-bakery-gold: #D4A054;
+  --color-bakery-gold-light: #EFC98A;
+  --color-bakery-text: #2A1520;
+  --color-bakery-text-muted: #9A6070;
+  --color-bakery-border: #F5C4D0;
+}
+
+@layer base {
+  body {
+    @apply bg-bakery-bg text-bakery-text font-sans;
+  }
+}
+
+@layer utilities {
+  .bg-stripes {
+    background-image: repeating-linear-gradient(
+      to right,
+      #FFFFFF 0px, #FFFFFF 40px,
+      #F9C4D0 40px, #F9C4D0 80px
+    );
+  }
+
+  .flour-dust {
+    background-image: radial-gradient(
+      circle at center,
+      rgba(255, 255, 255, 0.4) 0%,
+      transparent 70%
+    );
+  }
+
+  .awning-clip {
+    clip-path: polygon(0 0, 100% 0, 98% 100%, 2% 100%);
+  }
+
+  .badge-rotate {
+    transform: rotate(8deg);
+  }
+
+  .hero-stripe-tilt {
+    transform: rotate(-2deg);
+    scale: 1.1;
+  }
+}
